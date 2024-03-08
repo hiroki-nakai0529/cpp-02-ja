@@ -14,8 +14,13 @@ void Car::setPrice(double price) {
     this->price = price;
 }
 
+void Car::setDriver(Driver* driver) {
+    this->driver = driver;
+}
+
 std::string Car::getMake() const { return make; }
 std::string Car::getModel() const { return model; }
+Driver* Car::getDriver() const { return driver; }
 int Car::getYear() const { return year; }
 double Car::getPrice() const { return price; }
 
